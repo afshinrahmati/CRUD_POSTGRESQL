@@ -4,12 +4,12 @@
          "es5",
          "es6"
       ],
-      "target": "es5",
+      "target": "ESNext",
       "module": "commonjs",
       "moduleResolution": "node",
-      "outDir": "./build",
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
+      "outDir": "./dist",
+      "rootDir": "./",
+      "esModuleInterop": true,
       "sourceMap": true
    }
 }
