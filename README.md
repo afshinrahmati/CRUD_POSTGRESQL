@@ -5,6 +5,7 @@
 # sudo apt install docker-compose OR sudo pacman -S docker-compose
 # docker-compose up -d
 
+# yar add uuid
 
 
 # ** 1 **
@@ -13,4 +14,6 @@
 # yarn add sequelize && yarn add @types/sequelize -D
 # yarn add sqlite3 && yarn add @types/sqlite3 -D
 # touch database.sqlite
-# yar add uuid
+
+# ** 2 **
+# yarn add pg pg-hstore

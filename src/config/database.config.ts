@@ -1,13 +1,18 @@
-import { Sequelize } from "sequelize";
+import { Sequelize, DataTypes, UUIDV4 } from "sequelize";
 
 // const sequelize = new Sequelize('postgres://user:pass@example.com:5432/dbname')
 
 const db = new Sequelize("postgres", "postgresql", "postgresql", {
-    host:"localhost",
+    host: "localhost",
     // storage: "./database.sqlite",
     dialect: "postgres",
     logging: false
 });
+const queryInterface = db.getQueryInterface();
 
-
-export default  db 
+queryInterface.changeColumn("first", "id", {
+    type: DataTypes.UUID,
+    allowNull: false,
+    primaryKey: true
+})
+export default db 
